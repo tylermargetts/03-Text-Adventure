@@ -49,6 +49,12 @@ def update(selection,game,current,inventory):
     print("\nYou can't go that way!")
     return current
 
+def pointsystem(game, points, current, moves):
+    '''Get a number of points for finishing in a certain number of moves'''
+    if moves < 20 and current == 'OPENDOOR':
+        points + 50
+
+
 
 # Helper functions
 
@@ -82,7 +88,7 @@ def main():
         game = json.load(json_file)
 
     current = 'MAIN'
-    win = ['OPENDOOR']
+    win = ['WIN']
     lose = []
     moves = 0
     points = 0
