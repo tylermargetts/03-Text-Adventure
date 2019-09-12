@@ -16,7 +16,6 @@ def render(game,current,moves,points):
     ''' Displays the current room, moves, and points '''
     r = game['rooms']
     c = r[current]
-
     print('\n\nMoves: {moves}, Points: {points}'.format(moves=moves, points=points))
     print(c['desc'])
     if len(c['inventory']):
