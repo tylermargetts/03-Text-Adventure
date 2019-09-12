@@ -194,7 +194,7 @@
     },
     "SOUTHWALL": {
         "name": "South Wall",
-        "desc": "You are at the south wall. There is a locked door with a 9 number passkey. ",
+        "desc": "You are at the south wall. There is a locked door with a 9 number passkey. Type 'entercode' to try! ",
         "exits": [
               {
                 "verb": "NORTH",
@@ -268,7 +268,7 @@
         },  
     "WESTWALL": {
         "name": "West Wall",
-        "desc": "You are at the west wall. There is a safe with a 5 letter passcode. ",
+        "desc": "You are at the west wall. There is a safe with a 5 letter passcode. Type 'entercode' to try!",
         "exits": [
               {
                 "verb": "NORTH",
