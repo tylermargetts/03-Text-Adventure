@@ -218,7 +218,8 @@
                 "target": "DOORCODE",
                 "condition": ""
                 }
-        ]
+        ],
+        "inventory": []
     },
     "EASTWALL": {
         "name": "East Wall",
@@ -254,7 +255,8 @@
                 "target": "LITWALL",
                 "condition": ""
                 }
-            ]
+            ],
+            "inventory": []
         },  
     "WESTWALL": {
         "name": "West Wall",
@@ -290,7 +292,8 @@
                 "target": "SAFECODE",
                 "condition": ""
                 }
-            ]
+            ],
+            "inventory": []
     },   
     "TABLE": {
         "name": "Table",
@@ -326,7 +329,8 @@
                 "target": "PAPER",
                 "condition": ""
                 }     
-        ]
+        ],
+        "inventory": []
     },
     "PAPER": {
         "name": "Paper",
@@ -352,7 +356,8 @@
                 "target": "EASTWALL",
                 "condition": ""
               }
-            ]
+            ],
+            "inventory": []
         },
     "BEHINDPAINTING": {
         "name": "Behind Painting",
@@ -383,7 +388,8 @@
                 "target": "TABLE",
                 "condition": ""
                 } 
-            ]
+            ],
+            "inventory": []
         },
     "SAFECODE": {
         "name": "SafeCode",
@@ -399,7 +405,8 @@
                 "target": "PAPER2",
                 "condition": ""
               }
-            ]
+            ],
+            "inventory": []
         }, 
     "PAPER2": {
         "name": "Paper 2",
@@ -435,7 +442,8 @@
                 "target": "TABLE",
                 "condition": ""
                 } 
-            ]
+            ],
+            "inventory": []
         },
     "LITWALL": {
         "name": "Lit Wall",
@@ -466,7 +474,8 @@
                 "target": "TABLE",
                 "condition": ""
                 }
-            ]
+            ],
+            "inventory": []
         }, 
     "DOORCODE": {
         "name": "Door Code",
@@ -482,7 +491,8 @@
                 "target": "OPENDOOR",
                 "condition": ""
               }
-            ]
+            ],
+            "inventory": []
         },
     "OPENDOOR": {
         "name": "Open Door",
@@ -493,7 +503,8 @@
                 "target": "",
                 "condition": ""
               }
-            ]
+            ],
+            "inventory": []
         }
     }
 }
