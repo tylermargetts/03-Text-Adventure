@@ -33,6 +33,14 @@
         "map": "PEEL"
         },
     {
+        "v": "INSPECT",
+        "map": "PEEL"
+        },
+     {
+        "v": "EXAMINE",
+        "map": "PEEL"
+        },
+    {
         "v": "SOUTH",
         "map": "SOUTH"
         },
@@ -70,7 +78,7 @@
         },
     {
         "v": "OPEN",
-        "map": "ENTERCODE"
+        "map": "OPENFOLDER"
         },
     {
         "v": "OPENFOLDER",
