@@ -111,6 +111,14 @@
     {
         "v": "Y",
         "map": "YES"
+        },
+     {
+        "v": "EXIT",
+        "map": "EXIT"
+        },
+     {
+        "v": "ENTER CODE",
+        "map": "ENTERCODE"
         }
         
      ],
