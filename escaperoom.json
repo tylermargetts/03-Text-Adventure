@@ -157,7 +157,7 @@
     },
     "NORTHWALL": {
         "name": "North Wall",
-        "desc": "You are at to the north wall. There is a beautiful painting of a rainforest with a corner that appears more faded than the rest. ",
+        "desc": "You are at the north wall. There is a beautiful painting of a rainforest with a corner that appears more faded than the rest. ",
         "exits": [
           {
             "verb": "NORTH",
@@ -342,7 +342,7 @@
     },
     "PAPER": {
         "name": "Paper",
-        "desc": "You open the folder and read the paper. It reads 's=1'",
+        "desc": "You open the folder and read the paper. It reads '1, 9, 14, 13 = safe'",
         "exits": [
               {
                 "verb": "NORTH",
@@ -418,7 +418,7 @@
         }, 
     "PAPER2": {
         "name": "Paper 2",
-        "desc": "You opened the safe! There is another piece of paper. This reads, 'd=1'.",
+        "desc": "You opened the safe! There is another piece of paper. This reads, 'door = 1, 12, 12, 15'.",
         "exits": [
               {
                 "verb": "EXIT",
