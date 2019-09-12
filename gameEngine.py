@@ -77,14 +77,14 @@ def end_game(winning,points,moves):
 
 
 def main():
-    gameFile = 'zork.json'
+    gameFile = 'escaperoom.json'
 
     game = {}
     with open(gameFile) as json_file:
         game = json.load(json_file)
 
-    current = 'WHOUS'
-    win = ['END']
+    current = 'MAIN'
+    win = ['OPENDOOR']
     lose = []
     moves = 0
     points = 0
