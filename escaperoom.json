@@ -1,0 +1,499 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+        },
+      {
+        "v": "APPROACH",
+        "map": "APPROACHTABLE"
+        },
+      {
+        "v": "APPROACH TABLE",
+        "map": "APPROACHTABLE"
+        },
+      {
+        "v": "MIDDLE",
+        "map": "APPROACHTABLE"
+        },
+      {
+        "v": "CORNER",
+        "map": "PEEL"
+        },
+    {
+        "v": "PEEL",
+        "map": "PEEL"
+        },
+    {
+        "v": "SOUTH",
+        "map": "SOUTH"
+        },
+    {
+        "v": "NORTH",
+        "map": "NORTH"
+        },
+    {
+        "v": "EAST",
+        "map": "EAST"
+        },
+    {
+        "v": "WEST",
+        "map": "WEST"
+        },
+    {
+        "v": "S",
+        "map": "SOUTH"
+        },
+    {
+        "v": "N",
+        "map": "NORTH"
+        },
+    {
+        "v": "E",
+        "map": "EAST"
+        },
+    {
+        "v": "W",
+        "map": "WEST"
+        },
+    {
+        "v": "ENTERCODE",
+        "map": "ENTERCODE"
+        },
+    {
+        "v": "OPEN",
+        "map": "ENTERCODE"
+        },
+    {
+        "v": "OPENFOLDER",
+        "map": "OPENFOLDER"
+        },
+    {
+        "v": "FOLDER",
+        "map": "OPENFOLDER"
+        },
+    {
+        "v": "READ",
+        "map": "OPENFOLDER"
+        },
+    {
+        "v": "LIGMA",
+        "map": "LIGMA"
+        },
+    {
+        "v": "SHINELIGHT",
+        "map": "SHINELIGHT"
+        },
+    {
+        "v": "LIGHT",
+        "map": "SHINELIGHT"
+        },
+    {
+        "v": "BLACKLIGHT",
+        "map": "SHINELIGHT"
+        },
+    {
+        "v": "262411192",
+        "map": "262411192"
+        },
+    {
+        "v": "YES",
+        "map": "YES"
+        },
+    {
+        "v": "Y",
+        "map": "YES"
+        }
+        
+     ],
+     "rooms": {
+    "MAIN": {
+      "name": "Main Room",
+      "desc": "Welcome to Escape Room! You wake up alone in a square room. A table with a folder and a blacklight on top is in the middle of the room.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NORTHWALL",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "SOUTHWALL",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "WESTWALL",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "EASTWALL",
+          "condition": ""
+        },
+        {
+          "verb": "APPROACHTABLE",
+          "target": "TABLE",
+          "condition": ""
+          }
+      ],
+      "inventory": []
+    },
+    "NORTHWALL": {
+        "name": "North Wall",
+        "desc": "You are at to the north wall. There is a beautiful painting of a rainforest with a corner that appears more faded than the rest. ",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NORTHWALL",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SOUTHWALL",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "WESTWALL",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "EASTWALL",
+            "condition": ""
+          },
+          {
+            "verb": "APPROACHTABLE",
+            "target": "TABLE",
+            "condition": ""
+            },
+          {
+            "verb": "PEEL",
+            "target": "BEHIND PAINTING",
+            "condition": ""
+           }
+        ],
+        "inventory": []
+    },
+    "SOUTHWALL": {
+        "name": "South Wall",
+        "desc": "You are at the south wall. There is a locked door with a 9 number passkey. ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                },
+              {
+                "verb": "ENTERCODE",
+                "target": "DOORCODE",
+                "condition": ""
+                }
+        ]
+    },
+    "EASTWALL": {
+        "name": "East Wall",
+        "desc": "You are at the east wall. The wall is blank, but you have an odd feeling about it. ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                },        
+              {
+                "verb": "SHINELIGHT",
+                "target": "LITWALL",
+                "condition": ""
+                }
+            ]
+        },  
+    "WESTWALL": {
+        "name": "West Wall",
+        "desc": "You are at the west wall. There is a safe with a 5 letter passcode. ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                },  
+              {
+                "verb": "ENTERCODE",
+                "target": "SAFECODE",
+                "condition": ""
+                }
+            ]
+    },   
+    "TABLE": {
+        "name": "Table",
+        "desc": "You approach the table. There appears to be a piece of paper sticking out of the folder. ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                },   
+              {
+                "verb": "OPENFOLDER",
+                "target": "PAPER",
+                "condition": ""
+                }     
+        ]
+    },
+    "PAPER": {
+        "name": "Paper",
+        "desc": "You open the folder and read the paper. It reads 's=1'",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              }
+            ]
+        },
+    "BEHINDPAINTING": {
+        "name": "Behind Painting",
+        "desc": "You peel back the corner of the painting to see a see a set of numbers. They read, '20, 17, 15, 21, 9' ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                } 
+            ]
+        },
+    "SAFECODE": {
+        "name": "SafeCode",
+        "desc": "Enter the 5 letter code to the safe. If you do not know, type 'exit'",
+        "exits": [
+              {
+                "verb": "EXIT",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "LIGMA",
+                "target": "PAPER2",
+                "condition": ""
+              }
+            ]
+        }, 
+    "PAPER2": {
+        "name": "Paper 2",
+        "desc": "You opened the safe! There is another piece of paper. This reads, 'd=1'.",
+        "exits": [
+              {
+                "verb": "EXIT",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                } 
+            ]
+        },
+    "LITWALL": {
+        "name": "Lit Wall",
+        "desc": "A message appears when you shine the blacklight on the wall. It reads 'Im tall when Im young and short when Im old. What am I?' ",
+        "exits": [
+              {
+                "verb": "NORTH",
+                "target": "NORTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "WESTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "EASTWALL",
+                "condition": ""
+              },
+              {
+                "verb": "APPROACHTABLE",
+                "target": "TABLE",
+                "condition": ""
+                }
+            ]
+        }, 
+    "DOORCODE": {
+        "name": "Door Code",
+        "desc": "Enter the code to the door. If you do not know, type 'exit'",
+        "exits": [
+              {
+                "verb": "EXIT",
+                "target": "SOUTHWALL",
+                "condition": ""
+              },
+              {
+                "verb": "262411192",
+                "target": "OPENDOOR",
+                "condition": ""
+              }
+            ]
+        },
+    "OPENDOOR": {
+        "name": "Open Door",
+        "desc": "The door swings open. You have won! Play again?",
+        "exits": [
+              {
+                "verb": "Yes",
+                "target": "",
+                "condition": ""
+              }
+            ]
+        }
+    }
+}
