@@ -77,7 +77,7 @@ def end_game(winning,points,moves):
 
 
 def main():
-    gameFile = 'game.json'
+    gameFile = 'zork.json'
 
     game = {}
     with open(gameFile) as json_file:
