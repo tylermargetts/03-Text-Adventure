@@ -49,14 +49,6 @@ def update(selection,game,current,inventory):
     print("\nYou can't go that way!")
     return current
 
-def pointsystem(game, points, current, moves):
-    '''Get a number of points for finishing in a certain number of moves'''
-    r = game['rooms']
-    x = moves
-    if x < 20 and r[current] == 'OPENDOOR':
-        return points + 50
-
-
 
 # Helper functions
 
@@ -99,8 +91,6 @@ def main():
     while True:
 
         render(game,current,moves,points)
-
-        pointsystem(game, points, current, moves)
 
         selection = getInput(game,current,game['verbs'])
 
