@@ -512,7 +512,7 @@
         },
     "OPENDOOR": {
         "name": "Open Door",
-        "desc": "The door swings open. You have won! Play again?",
+        "desc": "",
         "exits": [
               {
                 "verb": "Yes",
