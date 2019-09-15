@@ -133,7 +133,7 @@
      "rooms": {
     "MAIN": {
       "name": "Main Room",
-      "desc": "Welcome to Escape Room! You wake up alone in a square room. A table with a folder and a blacklight on top is in the middle of the room.",
+      "desc": "Welcome to Escape Room! Try to complete the game without using the 'exits' input at any of the password locations. You wake up alone in a square room. A table with a folder and a blacklight on top is in the middle of the room.",
       "exits": [
         {
           "verb": "NORTH",
