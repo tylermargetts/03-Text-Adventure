@@ -94,7 +94,7 @@
         },
     {
         "v": "LIGMA",
-        "map": "LIGMA"
+        "map": "CODE1"
         },
     {
         "v": "SHINELIGHT",
@@ -110,7 +110,7 @@
         },
     {
         "v": "262411192",
-        "map": "262411192"
+        "map": "CODE2"
         },
     {
         "v": "YES",
@@ -417,7 +417,7 @@
                 "condition": ""
               },
               {
-                "verb": "LIGMA",
+                "verb": "CODE1",
                 "target": "PAPER2",
                 "condition": ""
               }
@@ -503,7 +503,7 @@
                 "condition": ""
               },
               {
-                "verb": "262411192",
+                "verb": "CODE2",
                 "target": "OPENDOOR",
                 "condition": ""
               }
