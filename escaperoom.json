@@ -14,15 +14,15 @@
         },
       {
         "v": "APPROACHTABLE",
-        "map": "APPROACHTABLE"
+        "map": "TABLE"
         },
       {
         "v": "TABLE",
-        "map": "APPROACHTABLE"
+        "map": "TABLE"
         },
       {
         "v": "MIDDLE",
-        "map": "APPROACHTABLE"
+        "map": "TABLE"
         },
       {
         "v": "CORNER",
@@ -125,10 +125,45 @@
         "map": "EXIT"
         },
      {
-        "v": "ENTER CODE",
+        "v": "ENTERCODE",
         "map": "ENTERCODE"
+        },
+    {
+        "v": "NORTHEAST",
+        "map": "NORTHEAST"
+        },
+    {
+        "v": "NORTHWEST",
+        "map": "NORTHWEST"
+        },
+     {
+        "v": "SOUTHEAST",
+        "map": "SOUTHEAST"
+        },
+     {
+        "v": "SOUTHWEST",
+        "map": "SOUTHWEST"
+        },
+      {
+        "v": "NE",
+        "map": "NORTHEAST"
+        },
+    {
+        "v": "NW",
+        "map": "NORTHWEST"
+        },
+     {
+        "v": "SE",
+        "map": "SOUTHEAST"
+        },
+     {
+        "v": "SW",
+        "map": "SOUTHWEST"
+        },
+      {
+        "v": "N",
+        "map": "NORTH"
         }
-        
      ],
      "rooms": {
     "MAIN": {
@@ -156,7 +191,7 @@
           "condition": ""
         },
         {
-          "verb": "APPROACHTABLE",
+          "verb": "TABLE",
           "target": "TABLE",
           "condition": ""
           }
@@ -188,7 +223,7 @@
             "condition": ""
           },
           {
-            "verb": "APPROACHTABLE",
+            "verb": "TABLE",
             "target": "TABLE",
             "condition": ""
             },
@@ -225,7 +260,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 },
@@ -262,7 +297,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 },        
@@ -299,7 +334,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 },  
@@ -336,7 +371,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 },   
@@ -400,7 +435,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 } 
@@ -454,7 +489,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 } 
@@ -486,7 +521,7 @@
                 "condition": ""
               },
               {
-                "verb": "APPROACHTABLE",
+                "verb": "TABLE",
                 "target": "TABLE",
                 "condition": ""
                 }
@@ -512,11 +547,203 @@
         },
     "OPENDOOR": {
         "name": "Open Door",
-        "desc": "",
+        "desc": "You made it through the first room! If you dare continue, type 'yes'",
         "exits": [
               {
                 "verb": "Yes",
-                "target": "",
+                "target": "MAIN2",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+          }, 
+      "MAIN2": {
+        "name": "MAIN2",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star. The walls have amazing cosmological designs on them and appear to be moving, causing you much confusion. You believe you have 10 minutes before you pass out from disorientation. ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+          },
+      "SE-POINT": {
+        "name": "SE-POINT",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "NE-POINT": {
+        "name": "NE-POINT",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "SW-POINT": {
+        "name": "SW-POINT",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "NW-POINT": {
+        "name": "NW-POINT",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "N-POINT": {
+        "name": "N-POINT",
+        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
                 "condition": ""
               }
             ],
