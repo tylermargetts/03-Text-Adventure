@@ -71,9 +71,7 @@ def end_game(winning,points,moves):
         print('You scored {points} points in {moves} moves. See you next time!'.format(moves=moves, points=points))
 
 
-
-
-
+    
 def main():
     gameFile = 'escaperoom.json'
 
