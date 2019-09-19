@@ -77,10 +77,6 @@
         "map": "ENTERCODE"
         },
     {
-        "v": "OPEN",
-        "map": "OPENFOLDER"
-        },
-    {
         "v": "OPENFOLDER",
         "map": "OPENFOLDER"
         },
@@ -163,6 +159,30 @@
       {
         "v": "N",
         "map": "NORTH"
+      },
+     {
+        "v": "YES",
+        "map": "YES"
+        },
+     {
+        "v": "OPEN",
+        "map": "OPEN"
+        },
+     {
+        "v": "HIM",
+        "map": "HIM"
+        },
+      {
+        "v": "WIFE",
+        "map": "WIFE"
+        },
+    {
+        "v": "HER",
+        "map": "HER"
+        },
+      {
+        "v": "HUSBAND",
+        "map": "HUSBAND"
         }
      ],
      "rooms": {
@@ -550,7 +570,7 @@
         "desc": "You made it through the first room! If you dare continue, type 'yes'",
         "exits": [
               {
-                "verb": "Yes",
+                "verb": "YES",
                 "target": "MAIN2",
                 "condition": ""
               }
@@ -591,7 +611,7 @@
           },
       "SE-POINT": {
         "name": "SE-POINT",
-        "desc": "The southeast point is ",
+        "desc": "You are at the southeast point. A little old man asks you, 'I can tell you which door I think you should take, or I can tell you which door my wife thinks you should take. But be careful, she is a liar.'",
         "exits": [
               {
                 "verb": "NORTHEAST",
@@ -616,6 +636,184 @@
               {
                 "verb": "NORTH",
                 "target": "N-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "WIFE",
+                "target": "OLDMAN2",
+                "condition": ""
+              },
+              {
+                "verb": "HIM",
+                "target": "OLDMAN1",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "OLDMAN1": {
+        "name": "OLDMAN1",
+        "desc": "I would advise you to take the blue door. ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }, 
+              {
+                "verb": "WIFE",
+                "target": "OLDMAN2",
+                "condition": ""
+              },
+              {
+                "verb": "HIM",
+                "target": "OLDMAN1",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "OLDMAN2": {
+        "name": "OLDMAN2",
+        "desc": "My wife would advise you to take the red door. ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }, 
+              {
+                "verb": "WIFE",
+                "target": "OLDMAN2",
+                "condition": ""
+              },
+              {
+                "verb": "HIM",
+                "target": "OLDMAN1",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "OLDWOMAN1": {
+        "name": "OLDWOMAN1",
+        "desc": "I would advise you to take the blue door. ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }, 
+              {
+                "verb": "HER",
+                "target": "OLDWOMAN1",
+                "condition": ""
+              },
+              {
+                "verb": "HUSBAND",
+                "target": "OLDWOMAN2",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "OLDWOMAN2": {
+        "name": "OLDWOMAN2",
+        "desc": "My husband would advise you to take the red door. ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              }, 
+              {
+                "verb": "HER",
+                "target": "OLDWOMAN1",
+                "condition": ""
+              },
+              {
+                "verb": "HUSBAND",
+                "target": "OLDWOMAN2",
                 "condition": ""
               }
             ],
@@ -623,7 +821,7 @@
         },
       "NE-POINT": {
         "name": "NE-POINT",
-        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "desc": "You are at the northeast point. There is a blue door with a sign that reads 'One door leads to freedom, one door leads to fate.' ",
         "exits": [
               {
                 "verb": "NORTHEAST",
@@ -648,6 +846,11 @@
               {
                 "verb": "NORTH",
                 "target": "N-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "OPEN",
+                "target": "WINROOM",
                 "condition": ""
               }
             ],
@@ -655,7 +858,7 @@
         },
       "SW-POINT": {
         "name": "SW-POINT",
-        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "desc": "You are at the southwest point. A little old woman says, 'I can tell you which door I think you should take, or I can tell you which door my husband thinks you should take. But be careful, he is a liar.' ",
         "exits": [
               {
                 "verb": "NORTHEAST",
@@ -680,6 +883,16 @@
               {
                 "verb": "NORTH",
                 "target": "N-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "HER",
+                "target": "OLDWOMAN1",
+                "condition": ""
+              },
+              {
+                "verb": "HUSBAND",
+                "target": "OLDWOMAN2",
                 "condition": ""
               }
             ],
@@ -687,7 +900,44 @@
         },
       "NW-POINT": {
         "name": "NW-POINT",
-        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+        "desc": "You are at the northwest point. There is a red door with a sign that reads 'One door leads to freedom, one door leads to fate.' ",
+        "exits": [
+              {
+                "verb": "NORTHEAST",
+                "target": "NE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTHWEST",
+                "target": "NW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHEAST",
+                "target": "SE-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTHWEST",
+                "target": "SW-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "NORTH",
+                "target": "N-POINT",
+                "condition": ""
+              },
+              {
+                "verb": "OPEN",
+                "target": "LOSEROOM",
+                "condition": ""
+              }
+            ],
+            "inventory": []
+        },
+      "N-POINT": {
+        "name": "N-POINT",
+        "desc": "You are at the north point. There is a message written on the wall that says, 'One of them always tells the truth, and one of them always lies.'",
         "exits": [
               {
                 "verb": "NORTHEAST",
@@ -717,37 +967,18 @@
             ],
             "inventory": []
         },
-      "N-POINT": {
-        "name": "N-POINT",
-        "desc": "The second room is much more interesting, and is shaped in the form of a star.",
+      "WINROOM": {
+        "name": "WINROOM",
+        "desc": "",
         "exits": [
-              {
-                "verb": "NORTHEAST",
-                "target": "NE-POINT",
-                "condition": ""
-              },
-              {
-                "verb": "NORTHWEST",
-                "target": "NW-POINT",
-                "condition": ""
-              },
-              {
-                "verb": "SOUTHEAST",
-                "target": "SE-POINT",
-                "condition": ""
-              },
-              {
-                "verb": "SOUTHWEST",
-                "target": "SW-POINT",
-                "condition": ""
-              },
-              {
-                "verb": "NORTH",
-                "target": "N-POINT",
-                "condition": ""
-              }
-            ],
-            "inventory": []
-        }
+            ]
+        },
+      "LOSEROOM": {
+        "name": "LOSEROOM",
+        "desc": "",
+        "exits": [
+            ]
     }
+  }
 }
+
